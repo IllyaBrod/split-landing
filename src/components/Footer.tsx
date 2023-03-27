@@ -3,7 +3,7 @@ const Footer = () => {
     <footer className="bg-showcase py-8">
       <div className="container mx-auto">
         <p className="text-4xl text-white mb-8">Split</p>
-        <div className="flex flex-wrap justify-between items-center">
+        <div className="flex flex-wrap justify-between gap-y-6 items-center">
           <div className="w-full md:w-auto text-center md:text-left">
             <p className="text-white">
               &copy; 2023 Split. All rights reserved.

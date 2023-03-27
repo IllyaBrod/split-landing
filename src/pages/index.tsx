@@ -46,14 +46,14 @@ const Home: FC = () => {
       <main className="w-full h-full overflow-hidden">
 
         <section id="digitalize" className="lg:h-screen flex
-        flex-col lg:flex-row items-center m-auto container">
+        flex-col lg:flex-row items-center m-auto container lg:justify-around">
 
           <div className="basis-3/5 lg:h-full">
             <Image
               src={TaxiTownSprite}
               alt={"Taxi Town Sprite"}
               style={{
-                objectFit: "cover",
+                objectFit: "contain",
                 height: "100%",
                 width: "auto",
               }}
@@ -63,18 +63,18 @@ const Home: FC = () => {
 
           <div className="basis-2/5 text-center lg:text-left py-10">
             <h1 className="mb-9">
-         Digitalize your Business
+              Digitalize your Business
             </h1>
             <p className="lg:text-2xl">
-       Allow your customers to easily order taxis through the app,
-       pay for and split their rides,
-       and track the taxi's location in real-time.<br/>
+              Allow your customers to easily order taxis through the app,
+              pay for and split their rides,
+              and track the taxi's location in real-time.<br/>
 
               <br/>
-       Also don't leave yourself empty-handed. Our application provides you
-       with the best tools to track your drivers and
-       monitor their performance, as gives all your drivers access
-       to the application on their smartphones.
+              Also don't leave yourself empty-handed. Our application provides you
+              with the best tools to track your drivers and
+              monitor their performance, as gives all your drivers access
+              to the application on their smartphones.
             </p>
             <LinkButton id="#contact" text="Learn More" />
 

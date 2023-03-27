@@ -31,7 +31,7 @@ const Showcase = ({id}: {id?: string}) => {
               objectFit: "cover",
               height: "100vh",
             }}
-            quality={100}
+            quality={80}
           />
         </div>
 
