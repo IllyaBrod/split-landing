@@ -71,12 +71,12 @@ const Home: FC = () => {
               and track the taxi's location in real-time.<br/>
 
               <br/>
-              Also don't leave yourself empty-handed. Our application provides you
+              In addition, do not leave yourself empty-handed. Our application provides you
               with the best tools to track your drivers and
               monitor their performance, as gives all your drivers access
               to the application on their smartphones.
             </p>
-            <LinkButton id="#contact" text="Learn More" />
+            <LinkButton id="contact" text="Learn More" />
 
           </div>
 
@@ -95,8 +95,8 @@ const Home: FC = () => {
                   description="Get higher conversion
                   with better customer experience."
                   backDescription="Get higher conversion for your business.
-                  With us, you can enlarge your customer already after one
-                  month. Our unique UX will increase your brand awareness and
+                  With our product, you can enlarge your customer already after one
+                  month. Our unique UX (User Experience) will increase your brand awareness and
                   boost customer satisfaction."
                 />
               </div>
@@ -195,7 +195,7 @@ const Home: FC = () => {
                 empower taxi companies to embrace the digital age
                 and thrive in a highly competitive market.
               </p>
-              <LinkButton id="" text="Contact Us" />
+              <LinkButton id="contact" text="Contact Us" />
             </div>
 
           </div>
