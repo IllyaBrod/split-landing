@@ -15,7 +15,7 @@
     "require-jsdoc": "warn",
     "new-cap": "off",
     "linebreak-style": "off",
-    "max-len": "warn",
+    "max-len": "off",
     "valid-jsdoc": ["error", {"requireReturnType": false}]
   }
 }

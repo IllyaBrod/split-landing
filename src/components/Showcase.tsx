@@ -9,7 +9,7 @@ const Showcase = ({id}: {id?: string}) => {
 
       <div className="h-full flex items-center">
         <div className="text-center lg:text-left p-5 lg:px-20 lg:basis-1/2">
-          <p className="text-huge text-primary leading-none font-black">split</p>
+          <p className=" text-9xl md:text-huge text-primary leading-none font-black">split</p>
 
           <h1 className="mt-16 mb-9 text-showcase">
               Empower your business

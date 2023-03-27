@@ -12,9 +12,10 @@ import AboutUsImg from "../../public/img/about-us-2.png";
 
 import Showcase from "@/components/Showcase";
 import Head from "next/head";
-import {FC} from "react";
+import {FC, useState} from "react";
 import Footer from "@/components/Footer";
 import FlipHover from "@/components/FlipHover";
+import Success from "@/components/Success";
 
 
 /**
@@ -22,6 +23,8 @@ import FlipHover from "@/components/FlipHover";
  * @return Home page
  */
 const Home: FC = () => {
+  const [success, setSuccess] = useState(false);
+
   return (
     <>
       <Head>
@@ -31,6 +34,10 @@ const Home: FC = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      {success && (
+        <Success setSuccess={setSuccess} />
+      )}
 
       <section className="bg-showcase w-full h-screen lg:flex">
         <Showcase />
@@ -69,7 +76,7 @@ const Home: FC = () => {
        monitor their performance, as gives all your drivers access
        to the application on their smartphones.
             </p>
-            <LinkButton id="" text="Learn More" />
+            <LinkButton id="#contact" text="Learn More" />
 
           </div>
 
@@ -98,11 +105,9 @@ const Home: FC = () => {
                   background="bg-card"
                   imageData={GpsSprite}
                   title="Tracking"
-                  description="Get real-time data on location of your employees"
-                  backDescription="Get higher conversion for your business.
-                  With us, you can enlarge your customer already after one
-                  month. Our unique UX will increase your brand awareness and
-                  boost customer satisfaction."
+                  description="Get real-time data on location
+                  of your employees."
+                  backDescription="Know where your employees are and what orders they have any second. In addition, our application will give you reports on the efficiency and overall results of your taxi drivers, so that you have a clear picture of your business."
                 />
               </div>
               <div className="lg:justify-self-end">
@@ -111,8 +116,7 @@ const Home: FC = () => {
                   imageData={ApplicationSprite}
                   title="Application"
                   description="Mobile app for all
-                  of your drivers to easily accept
-                  orders, get improved routing and leveled-up user experience"
+                  of your drivers."
                   backDescription="With our unique UX, improved orders
                   acceptance, and data-driven insights, we can help you
                   achieve higher conversion rates and boost your brand
@@ -151,7 +155,7 @@ const Home: FC = () => {
                 <Image src={SplitBill} alt="Split the Bill img" height={300} />
                 <h2 className="mb-5 mt-4">Split the bill</h2>
                 <p className="text-xl">Get a cheaper ride with us.
-                Share a travel with your friends and pay separately.</p>
+                Customers will be able to share a travel with their friends and pay separately.</p>
               </div>
 
               <div className="flex flex-col items-center
@@ -159,8 +163,8 @@ const Home: FC = () => {
                 <Image src={ChooseDriver} alt="Drivers img" height={300} />
                 <h2 className="mb-5 mt-4">Choose your driver</h2>
                 <p className="text-xl">No more automatically assigned drivers.
-                Get rating and the car of each driver
-                and make your decision who to drive with. </p>
+                Customers will get rating and the car of each driver
+                and make their own decision who to drive with. </p>
               </div>
 
               <div className="flex flex-col items-center
@@ -168,7 +172,7 @@ const Home: FC = () => {
                 <Image src={AppCustomer} alt="App customer img" height={300} />
                 <h2 className="mb-5 mt-4">Get Updates</h2>
                 <p className="text-xl">Get the most recent updates
-                on your travel. Your time is our priority. </p>
+                on the travel. Customer's time is our priority. </p>
               </div>
             </div>
           </div>
@@ -208,7 +212,11 @@ const Home: FC = () => {
               we will reach to you as soon as possible.
             </p>
 
-            <form action="https://formsubmit.co/illya20052003@gmail.com" method="POST">
+            <form action="https://formsubmit.co/23c438f4bfa2a1fee45c218ba4e699d1" method="POST">
+              <input type="text" name="_honey" className="hidden" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_next" value="http://localhost:3000" />
+
               <div className="grid lg:grid-cols-2 gap-y-11">
                 <div>
                   <label className="text-main font-light text-xl lg:text-2xl mr-6">
@@ -217,7 +225,7 @@ const Home: FC = () => {
                   <input
                     type="text"
                     name="company_name"
-                    className="border-b focus:outline-none focus:border-b-2" />
+                    className="border-b focus:outline-none focus:border-b-2 text-main" />
                 </div>
                 <div>
                   <label className="text-main font-light text-xl lg:text-2xl mr-6">
@@ -226,7 +234,7 @@ const Home: FC = () => {
                   <input
                     type="text"
                     name="city"
-                    className="border-b focus:outline-none focus:border-b-2" />
+                    className="border-b focus:outline-none focus:border-b-2 text-main" />
                 </div>
                 <div>
                   <label className="text-main font-light text-xl lg:text-2xl mr-6">
@@ -235,7 +243,7 @@ const Home: FC = () => {
                   <input
                     type="number"
                     name="number_of_employees"
-                    className="border-b focus:outline-none focus:border-b-2" />
+                    className="border-b focus:outline-none focus:border-b-2 text-main" />
                 </div>
                 <div>
                   <label className="text-main font-light text-xl lg:text-2xl mr-6">
@@ -244,7 +252,7 @@ const Home: FC = () => {
                   <input
                     type="email"
                     name="email"
-                    className="border-b focus:outline-none focus:border-b-2" />
+                    className="border-b focus:outline-none focus:border-b-2 text-main" />
                 </div>
                 <div>
                   <label className="text-main font-light text-xl lg:text-2xl mr-6">
@@ -253,13 +261,14 @@ const Home: FC = () => {
                   <input
                     type="tel"
                     name="phone_number"
-                    className="border-b focus:outline-none focus:border-b-2" />
+                    className="border-b focus:outline-none focus:border-b-2 text-main" />
                 </div>
               </div>
               <button
                 className="btn btn-md btn-primary rounded-full
                       capitalize text-xl lg:text-2xl mt-16 px-12"
                 type="submit"
+                onClick={() => setSuccess(true)}
               >
                 Send
               </button>

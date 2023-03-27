@@ -13,9 +13,6 @@ module.exports = {
       fontFamily: {
         sans: ["var(--font-lato)"],
       },
-      backgroundImage: {
-        "landing": "url('../../public/img/bg-image.png')",
-      },
       width: {
         "9/10": "90%",
         "3/5": "60%",
