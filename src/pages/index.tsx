@@ -16,6 +16,7 @@ import {FC, useState} from "react";
 import Footer from "@/components/Footer";
 import FlipHover from "@/components/FlipHover";
 import Success from "@/components/Success";
+import CardFlip from "@/components/CardFlip";
 
 
 /**
@@ -66,17 +67,15 @@ const Home: FC = () => {
               Digitalize your Business
             </h1>
             <p className="lg:text-2xl">
-              Allow your customers to easily order taxis through the app,
-              pay for and split their rides,
-              and track the taxi's location in real-time.<br/>
+              Allow your customers to easily order taxis through the app
+              and get innovative features that will boost their satisfaction.<br/>
 
               <br/>
-              In addition, do not leave yourself empty-handed. Our application provides you
+              In addition, our application provides you
               with the best tools to track your drivers and
-              monitor their performance, as gives all your drivers access
-              to the application on their smartphones.
+              monitor their performance, as well as gives you other useful business features.
             </p>
-            <LinkButton id="contact" text="Learn More" />
+            <LinkButton id="for-business" text="Learn More" />
 
           </div>
 
@@ -84,7 +83,7 @@ const Home: FC = () => {
 
         <section id="for-business" className="bg-white py-24 mb-24">
           <div className="container">
-            <h1 className="text-center mb-16">For you</h1>
+            <h1 className="text-center mb-16">Benefits For You</h1>
             <div className="grid lg:grid-cols-2 lg:grid-rows-2
             gap-24 justify-center">
               <div className="lg:justify-self-end">
@@ -111,20 +110,33 @@ const Home: FC = () => {
                 />
               </div>
               <div className="lg:justify-self-end">
-                <FlipHover
+                {/* <FlipHover
                   background="bg-card"
                   imageData={ApplicationSprite}
                   title="Application"
                   description="Mobile app for all
                   of your drivers."
-                  backDescription="With our unique UX, improved orders
-                  acceptance, and data-driven insights, we can help you
-                  achieve higher conversion rates and boost your brand
-                  awareness. Plus, with our proven track record of success,
+                  backDescription="With our unique UX, improved features,
+                  and data-driven insights, we can help you
+                  achieve higher conversion rates and bring your business to another level.
+                  Plus, with our proven track record of success,
                   you can start seeing results in as little as one month.
                   Join our platform today and start taking your business
                   to the next level."
-                />
+                /> */}
+                <CardFlip
+                  background="bg-card"
+                  imageData={ApplicationSprite}
+                  title="Application"
+                  description="Mobile app for all
+                  of your drivers."
+                  backDescription="With our unique UX, improved features,
+                  and data-driven insights, we can help you
+                  achieve higher conversion rates and bring your business to another level.
+                  Plus, with our proven track record of success,
+                  you can start seeing results in as little as one month.
+                  Join our platform today and start taking your business
+                  to the next level." />
               </div>
               <div className="lg:justify-self-start">
                 <FlipHover
@@ -147,7 +159,7 @@ const Home: FC = () => {
         {/* For customers section */}
         <section id="for-customers" className="mb-48">
           <div className="container text-center">
-            <h1 className="mb-16">For Your Customers</h1>
+            <h1 className="mb-16">Benefits For Your Customers</h1>
 
             <div className="flex flex-col lg:flex-row justify-between">
               <div className="flex flex-col items-center
@@ -164,7 +176,7 @@ const Home: FC = () => {
                 <h2 className="mb-5 mt-4">Choose your driver</h2>
                 <p className="text-xl">No more automatically assigned drivers.
                 Customers will get rating and the car of each driver
-                and make their own decision who to drive with. </p>
+                and make their own decision who to choose. </p>
               </div>
 
               <div className="flex flex-col items-center

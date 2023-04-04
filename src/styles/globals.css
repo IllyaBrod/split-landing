@@ -4,7 +4,7 @@
 
 @layer base {
   h1 {
-    @apply text-main text-4xl lg:text-5xl font-semibold;
+    @apply text-main text-4xl xl:text-5xl font-semibold;
   }
 
   h2 {

@@ -7,16 +7,14 @@ const Showcase = ({id}: {id?: string}) => {
   return (
 
     <div className="h-full flex items-center max-w-[1920px]">
-      <div className="text-center lg:text-left p-5 lg:px-20 lg:basis-1/2">
-        <p className=" text-9xl md:text-huge text-primary leading-none font-black">split</p>
+      <div className="text-center lg:text-left p-5 md:px-14 xl:px-20 lg:basis-1/2">
+        <p className="text-9xl md:text-huge text-primary leading-none font-black">split</p>
 
-        <h1 className="mt-16 mb-9 text-showcase">
+        <h1 className="mt-16 mb-6 xl:mb-9 text-showcase">
               Empower your business
         </h1>
-        <p className="text-2xl text-secondary">
-              We create an application to empower taxi companies to be
-              able to compete in the industry by delivering improved UX
-              and higher customer satisfaction.
+        <p className="text-xl xl:text-2xl text-secondary">
+          We are in the process of developing an application specifically tailored for taxi companies, aimed at boosting their competitiveness in the industry by providing a superior user experience and enhancing customer satisfaction. With our innovative technology, taxi companies can improve their operations, streamline their services, and ultimately, drive greater success.
         </p>
 
         <LinkButton id="contact" text="Contact Us" />
