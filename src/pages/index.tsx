@@ -14,7 +14,6 @@ import Showcase from "@/components/Showcase";
 import Head from "next/head";
 import {FC, useState} from "react";
 import Footer from "@/components/Footer";
-import FlipHover from "@/components/FlipHover";
 import Success from "@/components/Success";
 import CardFlip from "@/components/CardFlip";
 
