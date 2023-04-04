@@ -212,7 +212,7 @@ const Home: FC = () => {
             <form action="https://formsubmit.co/7037518ec0f4c46bfe873f95c6b71c8b" method="POST">
               <input type="text" name="_honey" className="hidden" />
               <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_next" value="http://https://split-landing-phi.vercel.app" />
+              <input type="hidden" name="_next" value="https://www.splitaxi.com/" />
 
               <div className="grid lg:grid-cols-2 gap-y-11">
                 <div>
