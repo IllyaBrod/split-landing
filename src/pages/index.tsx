@@ -209,7 +209,7 @@ const Home: FC = () => {
               we will reach to you as soon as possible.
             </p>
 
-            <form action="https://formsubmit.co/23c438f4bfa2a1fee45c218ba4e699d1" method="POST">
+            <form action="https://formsubmit.co/partnership@splitaxi.com" method="POST">
               <input type="text" name="_honey" className="hidden" />
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_next" value="http://https://split-landing-phi.vercel.app" />
