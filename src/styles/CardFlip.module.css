@@ -1,5 +1,5 @@
 .container {
-  @apply max-w-[400px] md:w-[400px] lg:h-[450px] relative;
+  @apply h-full w-full relative;
 }
 
 .front, .back {
@@ -9,11 +9,12 @@
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   position: absolute;
-  @apply transition-all duration-700;
+  @apply transition-all duration-700 rounded-4xl;
 }
 
 .front {
   transform: perspective(600px) rotateY(0deg);
+  @apply shadow-xl;
 }
 
 .back {
@@ -22,8 +23,10 @@
 
 .container:hover > .front {
   transform: perspective(600px) rotateY(-180deg);
+  -webkit-transform: perspective(600px) rotateY(-180deg);
 }
 
 .container:hover > .back {
   transform: perspective(600px) rotateY(0deg);
+  -webkit-transform: perspective(600px) rotateY(0deg);
 }
