@@ -1,4 +1,4 @@
-.container {
+.card {
   @apply h-full w-full relative;
 }
 
@@ -21,12 +21,12 @@
   transform: perspective(600px) rotateY(180deg);
 }
 
-.container:hover > .front {
+.card:hover > .front {
   transform: perspective(600px) rotateY(-180deg);
   -webkit-transform: perspective(600px) rotateY(-180deg);
 }
 
-.container:hover > .back {
+.card:hover > .back {
   transform: perspective(600px) rotateY(0deg);
   -webkit-transform: perspective(600px) rotateY(0deg);
 }

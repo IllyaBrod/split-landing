@@ -14,8 +14,10 @@ import Showcase from "@/components/Showcase";
 import Head from "next/head";
 import {FC, useState} from "react";
 import Footer from "@/components/Footer";
+import FlipHover from "@/components/FlipHover";
 import Success from "@/components/Success";
 import CardFlip from "@/components/CardFlip";
+
 
 /**
  * Home page
@@ -82,7 +84,7 @@ const Home: FC = () => {
         <section id="for-business" className="bg-white py-24 mb-24">
           <div className="container">
             <h1 className="text-center mb-16">Benefits For You</h1>
-            <div className="grid lg:grid-cols-2 lg:grid-rows-2
+            <div className="flex flex-col lg:grid lg:grid-cols-2 lg:grid-rows-2
             gap-24 justify-center">
               <div className="lg:justify-self-end">
                 <CardFlip
@@ -91,7 +93,10 @@ const Home: FC = () => {
                   title="Higher conversion"
                   description="Get higher conversion
                   with better customer experience."
-                  backDescription="Make ordering taxi easy for your customers. By implementing our solution, you'll attract more customers, boost your conversion rates, and enhance your overall customer satisfaction - all within a month of adoption. Trust us to take your business to the next level!"
+                  backDescription="Get higher conversion for your business.
+                  With our product, you can enlarge your customer already after one
+                  month. Our unique UX (User Experience) will increase your brand awareness and
+                  boost customer satisfaction."
                 />
               </div>
               <div className="lg:justify-self-start">
@@ -101,7 +106,7 @@ const Home: FC = () => {
                   title="Tracking"
                   description="Get real-time data on location
                   of your employees."
-                  backDescription="Know where your employees are and what orders they have any second. In addition, our application will give you drivers' performance report, so that you have a clear picture of your business."
+                  backDescription="Know where your employees are and what orders they have any second. In addition, our application will give you reports on the efficiency and overall results of your taxi drivers, so that you have a clear picture of your business."
                 />
               </div>
               <div className="lg:justify-self-end">
@@ -114,6 +119,8 @@ const Home: FC = () => {
                   backDescription="With our unique UX, improved features,
                   and data-driven insights, we can help you
                   achieve higher conversion rates and bring your business to another level.
+                  Plus, with our proven track record of success,
+                  you can start seeing results in as little as one month.
                   Join our platform today and start taking your business
                   to the next level." />
               </div>

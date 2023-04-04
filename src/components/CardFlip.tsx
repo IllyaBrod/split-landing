@@ -7,8 +7,8 @@ const CardFlip = ({imageData, title, description, background, backDescription}:
   {imageData: StaticImageData, title: string, description: string,
     background: string, backDescription: string}) => {
   return (
-    <div className="max-w-[400px] md:w-[400px] h-[450px]">
-      <div className={styles.container}>
+    <div className="max-w-[400px] w-full md:w-[400px] h-[450px]">
+      <div className={styles.card}>
         <div className={`${styles.front} flex flex-col items-center
          rounded-4xl text-center px-7 pb-7 pt-3  ${background}`}>
           <GiClick size={30} color="#1c1c1c" className="absolute left-5 top-5 opacity-50" />
