@@ -14,10 +14,8 @@ import Showcase from "@/components/Showcase";
 import Head from "next/head";
 import {FC, useState} from "react";
 import Footer from "@/components/Footer";
-import FlipHover from "@/components/FlipHover";
 import Success from "@/components/Success";
 import CardFlip from "@/components/CardFlip";
-
 
 /**
  * Home page
@@ -87,43 +85,26 @@ const Home: FC = () => {
             <div className="grid lg:grid-cols-2 lg:grid-rows-2
             gap-24 justify-center">
               <div className="lg:justify-self-end">
-                <FlipHover
+                <CardFlip
                   background="bg-card"
                   imageData={ConversionSprite}
                   title="Higher conversion"
                   description="Get higher conversion
                   with better customer experience."
-                  backDescription="Get higher conversion for your business.
-                  With our product, you can enlarge your customer already after one
-                  month. Our unique UX (User Experience) will increase your brand awareness and
-                  boost customer satisfaction."
+                  backDescription="Make ordering taxi easy for your customers. By implementing our solution, you'll attract more customers, boost your conversion rates, and enhance your overall customer satisfaction - all within a month of adoption. Trust us to take your business to the next level!"
                 />
               </div>
               <div className="lg:justify-self-start">
-                <FlipHover
+                <CardFlip
                   background="bg-card"
                   imageData={GpsSprite}
                   title="Tracking"
                   description="Get real-time data on location
                   of your employees."
-                  backDescription="Know where your employees are and what orders they have any second. In addition, our application will give you reports on the efficiency and overall results of your taxi drivers, so that you have a clear picture of your business."
+                  backDescription="Know where your employees are and what orders they have any second. In addition, our application will give you drivers' performance report, so that you have a clear picture of your business."
                 />
               </div>
               <div className="lg:justify-self-end">
-                {/* <FlipHover
-                  background="bg-card"
-                  imageData={ApplicationSprite}
-                  title="Application"
-                  description="Mobile app for all
-                  of your drivers."
-                  backDescription="With our unique UX, improved features,
-                  and data-driven insights, we can help you
-                  achieve higher conversion rates and bring your business to another level.
-                  Plus, with our proven track record of success,
-                  you can start seeing results in as little as one month.
-                  Join our platform today and start taking your business
-                  to the next level."
-                /> */}
                 <CardFlip
                   background="bg-card"
                   imageData={ApplicationSprite}
@@ -133,13 +114,11 @@ const Home: FC = () => {
                   backDescription="With our unique UX, improved features,
                   and data-driven insights, we can help you
                   achieve higher conversion rates and bring your business to another level.
-                  Plus, with our proven track record of success,
-                  you can start seeing results in as little as one month.
                   Join our platform today and start taking your business
                   to the next level." />
               </div>
               <div className="lg:justify-self-start">
-                <FlipHover
+                <CardFlip
                   background="bg-card"
                   imageData={AnalyticsSprite}
                   title="Accountancy"

@@ -2,7 +2,6 @@ import LinkButton from "./LinkButton";
 import Image from "next/image";
 import BackgroundImage from "../../public/img/bg-image.png";
 
-
 const Showcase = ({id}: {id?: string}) => {
   return (
 
@@ -14,7 +13,7 @@ const Showcase = ({id}: {id?: string}) => {
               Empower your business
         </h1>
         <p className="text-xl xl:text-2xl text-secondary">
-          We are in the process of developing an application specifically tailored for taxi companies, aimed at boosting their competitiveness in the industry by providing a superior user experience and enhancing customer satisfaction. With our innovative technology, taxi companies can improve their operations, streamline their services, and ultimately, drive greater success.
+          We are in the process of developing an application specifically tailored for taxi companies, aimed at boosting their competitiveness in the industry by providing a superior user experience and enhancing customer satisfaction.
         </p>
 
         <LinkButton id="contact" text="Contact Us" />
