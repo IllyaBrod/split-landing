@@ -92,10 +92,7 @@ const Home: FC = () => {
                   title="Higher conversion"
                   description="Get higher conversion
                   with better customer experience."
-                  backDescription="Get higher conversion for your business.
-                  With our product, you can enlarge your customer already after one
-                  month. Our unique UX (User Experience) will increase your brand awareness and
-                  boost customer satisfaction."
+                  backDescription="Make ordering taxi easy for your customers. By implementing our solution, you'll attract more customers, boost your conversion rates, and enhance your overall customer satisfaction - all within a month of adoption. Trust us to take your business to the next level!"
                 />
               </div>
               <div className="lg:justify-self-start">
@@ -105,7 +102,7 @@ const Home: FC = () => {
                   title="Tracking"
                   description="Get real-time data on location
                   of your employees."
-                  backDescription="Know where your employees are and what orders they have any second. In addition, our application will give you reports on the efficiency and overall results of your taxi drivers, so that you have a clear picture of your business."
+                  backDescription="Know where your employees are and what orders they have any second. In addition, drivers' performance report, so that you have a clear picture of your business."
                 />
               </div>
               <div className="lg:justify-self-end">
@@ -114,14 +111,10 @@ const Home: FC = () => {
                   imageData={ApplicationSprite}
                   title="Application"
                   description="Mobile app for all
-                  of your drivers."
-                  backDescription="With our unique UX, improved features,
-                  and data-driven insights, we can help you
-                  achieve higher conversion rates and bring your business to another level.
-                  Plus, with our proven track record of success,
-                  you can start seeing results in as little as one month.
-                  Join our platform today and start taking your business
-                  to the next level." />
+                  of your drivers and customers."
+                  backDescription="Simplify customer and driver interactions with our solution. 
+                  Easy UX, driver's app, improved routing, in-app communication, and many more. 
+                  Plus, get a separate business portal with automated data analysis, financial reporting, and insights of your company performance." />
               </div>
               <div className="lg:justify-self-start">
                 <CardFlip
