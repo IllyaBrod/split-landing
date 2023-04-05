@@ -112,8 +112,8 @@ const Home: FC = () => {
                   title="Application"
                   description="Mobile app for all
                   of your drivers and customers."
-                  backDescription="Simplify customer and driver interactions with our solution. 
-                  Easy UX, driver's app, improved routing, in-app communication, and many more. 
+                  backDescription="Simplify customer and driver interactions with our solution.
+                  Easy UX, driver's app, improved routing, in-app communication, and many more.
                   Plus, get a separate business portal with automated data analysis, financial reporting, and insights of your company performance." />
               </div>
               <div className="lg:justify-self-start">
