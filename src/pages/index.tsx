@@ -215,6 +215,7 @@ const Home: FC = () => {
                   <input
                     type="text"
                     name="company_name"
+                    required
                     className="border-b focus:outline-none focus:border-b-2 text-main" />
                 </div>
                 <div>
@@ -224,6 +225,7 @@ const Home: FC = () => {
                   <input
                     type="text"
                     name="city"
+                    required
                     className="border-b focus:outline-none focus:border-b-2 text-main" />
                 </div>
                 <div>
@@ -233,6 +235,7 @@ const Home: FC = () => {
                   <input
                     type="number"
                     name="number_of_employees"
+                    required
                     className="border-b focus:outline-none focus:border-b-2 text-main" />
                 </div>
                 <div>
@@ -242,6 +245,7 @@ const Home: FC = () => {
                   <input
                     type="email"
                     name="email"
+                    required
                     className="border-b focus:outline-none focus:border-b-2 text-main" />
                 </div>
                 <div>
