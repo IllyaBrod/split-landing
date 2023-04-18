@@ -12,10 +12,11 @@ import AboutUsImg from "../../public/img/about-us-2.png";
 
 import Showcase from "@/components/Showcase";
 import Head from "next/head";
-import {FC, useState} from "react";
+import {FC, useEffect, useState} from "react";
 import Footer from "@/components/Footer";
 import Success from "@/components/Success";
 import CardFlip from "@/components/CardFlip";
+import {useRouter} from "next/router";
 
 
 /**
@@ -24,6 +25,17 @@ import CardFlip from "@/components/CardFlip";
  */
 const Home: FC = () => {
   const [success, setSuccess] = useState(false);
+  const router = useRouter();
+
+  useEffect(() => {
+    if (router.query.success) {
+      setSuccess(true);
+      router.push({
+        pathname: "",
+      });
+    }
+  }, [router.query]);
+
 
   return (
     <>
@@ -205,7 +217,7 @@ const Home: FC = () => {
             <form action="https://formsubmit.co/7037518ec0f4c46bfe873f95c6b71c8b" method="POST">
               <input type="text" name="_honey" className="hidden" />
               <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_next" value="https://www.splitaxi.com/" />
+              <input type="hidden" name="_next" value="http://localhost:3000?success=true" />
 
               <div className="grid lg:grid-cols-2 gap-y-11">
                 <div>
@@ -235,6 +247,8 @@ const Home: FC = () => {
                   <input
                     type="number"
                     name="number_of_employees"
+                    inputMode="numeric"
+                    pattern="[0-9]+"
                     required
                     className="border-b focus:outline-none focus:border-b-2 text-main" />
                 </div>
@@ -262,7 +276,6 @@ const Home: FC = () => {
                 className="btn btn-md btn-primary rounded-full
                       capitalize text-xl lg:text-2xl mt-16 px-12"
                 type="submit"
-                onClick={() => setSuccess(true)}
               >
                 Send
               </button>
